@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace MovMovie.Models
 {
@@ -10,6 +11,7 @@ namespace MovMovie.Models
         public string Title { get; set; }
 
         [DisplayName("Release Date")]
+        [DataType(DataType.Date)]
         public DateTime ReleaseDate { get; set; }
 
         public string Genre { get; set; }
